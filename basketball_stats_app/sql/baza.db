@@ -1,0 +1,22 @@
+CREATE TABLE Players (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    position TEXT
+);
+
+CREATE TABLE PlayerStats (
+    id INTEGER PRIMARY KEY,
+    player_id INTEGER,
+    ftm INTEGER,
+    fta INTEGER,
+    2pm INTEGER,
+    2pa INTEGER,
+    3pm INTEGER,
+    3pa INTEGER,
+    reb INTEGER,
+    blk INTEGER,
+    ast INTEGER,
+    stl INTEGER,
+    tov INTEGER,
+    FOREIGN KEY (player_id) REFERENCES Players (id)
+);
