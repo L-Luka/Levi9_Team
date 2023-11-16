@@ -30,3 +30,33 @@ Pokrenite Flask aplikaciju:
 
 ```bash
 python API.py
+
+
+Aplikacija će biti dostupna na http://localhost:5000/.
+
+API Endpoint
+Dobijanje prosečnih vrednosti statistika za igrača
+Endpoint: /player_stats/<player_id>
+Metoda: GET
+Primer: http://localhost:5000/player_stats/1
+Odgovor će biti u JSON formatu i sadržaće prosečne vrednosti statistika za traženog igrača.
+
+json
+{
+    "avg_ftm": 2.5,
+    "avg_fta": 3.0,
+    "avg_2pm": 5.0,
+    "avg_2pa": 8.0,
+    "avg_3pm": 1.0,
+    "avg_3pa": 2.0,
+    "avg_reb": 7.0,
+    "avg_blk": 1.2,
+    "avg_ast": 3.5,
+    "avg_stl": 1.0,
+    "avg_tov": 2.0
+}
+Korišćene Tehnologije
+
+Python
+Flask
+SQLite
